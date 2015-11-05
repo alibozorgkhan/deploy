@@ -3,6 +3,7 @@ deployment:
     branch: code-deploy
     codedeploy:
       CodeDeployApp:
+        region: us-west-2
         deployment_group: production
 test:
   override:
