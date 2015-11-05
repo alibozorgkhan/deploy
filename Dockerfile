@@ -8,7 +8,7 @@ RUN echo "vlab:vlab" | chpasswd
 #   Install apache, python, git
 RUN apt-get update
 RUN apt-get install -y apache2 libapache2-mod-wsgi
-RUN apt-get install -y python-dev python-setuptools python-pip
+RUN apt-get install -y libpq-dev python-dev python-setuptools python-pip
 
 #   Virtual env
 RUN pip install virtualenv
