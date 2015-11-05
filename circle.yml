@@ -4,3 +4,6 @@ deployment:
     codedeploy:
       CodeDeployApp:
         deployment_group: production
+test:
+  override:
+    - python test.py
