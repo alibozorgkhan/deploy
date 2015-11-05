@@ -10,7 +10,7 @@ deployment:
             bucket: yo-code-deploy
             key_pattern: code-deploy-{SHORT_COMMIT}-{BUILD_NUM}.tar.gz
         region: us-west-2
-        deployment_group: production
+        deployment_group: Production
 test:
   override:
     - python test.py
