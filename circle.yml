@@ -1,5 +1,6 @@
 deployment:
-  staging:
+  production:
+    tag: /prod-.*/
     branch: code-deploy
     codedeploy:
       CodeDeployApp:
@@ -7,7 +8,7 @@ deployment:
         revision_location:
           revision_type: S3
           s3_location:
-            bucket: yo-code-deploy
+            bucket: vlab-deployments
             key_pattern: code-deploy-{SHORT_COMMIT}-{BUILD_NUM}.tar.gz
         region: us-west-2
         deployment_group: Production
