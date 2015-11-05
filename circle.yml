@@ -1,6 +1,6 @@
 deployment:
   staging:
-    branch: master
+    branch: code-deploy
     codedeploy:
       CodeDeployApp:
         deployment_group: production
