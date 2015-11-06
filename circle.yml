@@ -1,13 +1,13 @@
 deployment:
   production:
-    tag: /prod-.*/
+    branch: code-deploy
     codedeploy:
       CodeDeployApp:
         application_root: /
         revision_location:
           revision_type: S3
           s3_location:
-            bucket: vlab-deployments
+            bucket: yo-code-deploy
             key_pattern: code-deploy-{SHORT_COMMIT}-{BUILD_NUM}.tar.gz
         region: us-west-2
         deployment_group: Production
@@ -15,3 +15,4 @@ deployment:
 test:
   override:
     - python test.py
+
