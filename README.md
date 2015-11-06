@@ -18,6 +18,7 @@ Simple walk through for deploying a github-hosted project on EC2 Ubuntu instance
 3. [Configure Instance tab]: Click on `Advanced Details` and paste the following script into the box:
     ```
     #!/bin/bash
+    
     apt-get -y update
     apt-get -y install awscli
     apt-get -y install ruby2.0
