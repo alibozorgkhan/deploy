@@ -19,17 +19,11 @@ Simple walk through for deploying a github-hosted project on EC2 Ubuntu instance
     ```
     #!/bin/bash
     apt-get -y update
-
     apt-get -y install awscli
-
     apt-get -y install ruby2.0
-
     cd /home/ubuntu
-
     aws s3 cp s3://aws-codedeploy-us-west-2/latest/install . --region us-west-2
-
     chmod +x ./install
-    
     ./install auto
     ```
 4. [Tag Instance tab]: Pick a tag (CodeDeployEC2Instance)
